@@ -26,7 +26,7 @@ public class Webhook implements HttpCalloutMock
     return content;
   }
   
-  @future(callout=true)
+  @@future(callout=true)
   public static void callout(String url, String content)
   {
     if (Test.isRunningTest())
